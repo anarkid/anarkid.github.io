@@ -83,7 +83,7 @@
   <h1 class="text-center">Education</h1>
   <div class="container text-center">
     <div class="row">
-      <div class="col border-end">
+      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalTemplate">
         <img src="Assets\edu\MSU-Logo.png" alt="LogoMSU" style="width: 255px; height: 200px;">
       </div>
       <div class="col text-start">
@@ -93,7 +93,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col border-end">
+      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalTemplate">
         <img src="Assets\edu\KMJLogo.png" alt="LogoKMJ" style="width: 255px; height: 200px;">
       </div>
       <div class="col text-start">
@@ -103,7 +103,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col border-end">
+      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalTemplate">
         <img src="Assets\edu\MRSMLogo.png" alt="LogoMRSM" style="width: 255px; height: 200px;">
       </div>
       <div class="col text-start">
@@ -185,6 +185,25 @@
   </div>
 </div>
 <!--modal2 ends-->
+<!--modalTemplate starts-->
+<div class="modal fade" id="ModalTemplate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Files</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="max-width: 100%;">
+        <div class="d-grid gap-2 d-md-block">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modalTemplate ends-->
 </body>
 </html>
 
