@@ -27,7 +27,7 @@
           <a class="nav-link active" aria-current="page" href="#Socials">Socials</a>
         </li>
       </ul>
-      <button class="btn btn-outline-primary" id="downloadButton">Download CV</button>
+      <button class="btn btn-outline-primary" id="CV_Download">Download CV</button>
     </div>
   </div>
 </nav>
@@ -83,33 +83,33 @@
   <h1 class="text-center">Education</h1>
   <div class="container text-center">
     <div class="row">
-      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalTemplate">
+      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalMSUCerts">
         <img src="Assets\edu\MSU-Logo.png" alt="LogoMSU" style="width: 255px; height: 200px;">
       </div>
       <div class="col text-start">
         <h2>2020 - 2023</h2>
         <p>Management and Science University, Shah Alam</p>
-        <p>Bachelor of Computer Science(Hons.)<br> Final CGPA: 3.46</p>
+        <p>Bachelor of Computer Science(Hons.)</p>
       </div>
     </div>
     <div class="row">
-      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalTemplate">
+      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalKMJCerts">
         <img src="Assets\edu\KMJLogo.png" alt="LogoKMJ" style="width: 255px; height: 200px;">
       </div>
       <div class="col text-start">
         <h2>2018-2019</h2>
         <p>Johor Matriculation College, Tangkak</p>
-        <p>Matriculation Science Stream 1<br> Final CGPA:2.00</p>
+        <p>Chemistry, Biology and Physics Science Stream</p>
       </div>
     </div>
     <div class="row">
-      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalTemplate">
+      <div class="col border-end" data-bs-toggle="modal" data-bs-target="#ModalMRSMCerts">
         <img src="Assets\edu\MRSMLogo.png" alt="LogoMRSM" style="width: 255px; height: 200px;">
       </div>
       <div class="col text-start">
         <h2>2013-2017</h2>
         <p>MRSM Parit, Perak</p>
-        <p>SPM: 2A 3A- 1B+ 3B <br> IGCSE: 1A 3B 1C 1E</p>
+        <p>IGCSE and SPM Science Stream</p>
       </div>
     </div>
   </div>
@@ -134,7 +134,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="DRTest">
+        <img src="Assets/misc/DRTestUI.png" class="card-img-top" alt="DRTest" data-bs-toggle="modal" data-bs-target="#exampleModal2">
         <div class="card-body">
           <h5 class="card-title">Digital Vision Test using AI for Early Detection of Vision Problems in Patient with Diabetes Mellitus</h5>
           <p class="card-text">Create and design an artificial intelligence model to detect diabetic retinopathy from the image of a fundus.</p>
@@ -185,31 +185,83 @@
   </div>
 </div>
 <!--modal2 ends-->
-<!--modalTemplate starts-->
-<div class="modal fade" id="ModalTemplate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--modal3 starts-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Files</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Digital Vision Test using AI for Early Detection of Vision Problems in Patient with Diabetes Mellitus</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="max-width: 100%;">
-        <div class="d-grid gap-2 d-md-block">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-primary">Primary</button>
+        <img src="Assets/misc/DRTestUI.png" alt="piHole" class="img-fluid" >
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal3 ends-->
+<!--modalMSUCerts starts-->
+<div class="modal fade" id="ModalMSUCerts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MSU Documents</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="max-width: 100%;">
+        <div class="d-grid gap-2 d-md-block text-center">
+          <button type="button" class="btn btn-primary">Bachelor's Degree</button>
+          <button type="button" class="btn btn-primary">Transcript</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!--modalTemplate ends-->
+<!--modalMSUCerts ends-->
+<!--modalKMJCerts starts-->
+<div class="modal fade" id="ModalKMJCerts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">KMJ Documents</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="max-width: 100%;">
+        <div class="d-grid gap-2 d-md-block text-center">
+          <button type="button" class="btn btn-primary">Certificate</button>
+          <button type="button" class="btn btn-primary">Transcript</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modalKMJCerts ends-->
+<!--modalMRSMCerts starts-->
+<div class="modal fade" id="ModalMRSMCerts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">MRSM Documents</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="max-width: 100%;">
+        <div class="d-grid gap-2 d-md-block text-center">
+          <button type="button" class="btn btn-primary">SPM Certificate</button>
+          <button type="button" class="btn btn-primary">SPM Transcript</button>
+          <button type="button" class="btn btn-primary">IGCSE Certificate</button>
+          <button type="button" class="btn btn-primary">IGCSE Transcript</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modalMRSMCerts ends-->
 </body>
 </html>
 
 <!-- JavaScript to handle download CV-->
 <script>
-  document.getElementById("downloadButton").addEventListener("click", function() {
+  document.getElementById("CV_Download").addEventListener("click", function() {
     // URL of the file to download
     var fileUrl = "Assets/files/My resume 2024.pdf";
 
